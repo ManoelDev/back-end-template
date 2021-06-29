@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres
+    container_name: x1code_database
+    restart: always
+    ports:
+      - ${DB_PORT}:5432
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    volumes:
+      - pgdata:/data/postgres
+
+  redis:
+    image: redis:alpine
+    container_name: x1code_redis
+    ports:
+      - ${REDIS_PORT}:6379
+
+  app:
+    build: .
+    container_name: x1code
+    restart: always
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+      - 9229:9229
+    volumes:
+      - .:/usr/src/app
+    links:
+      - database
+    depends_on:
+      - database
+    # environment:
+    #   - DB_COMPOSE_HOST=postgres
+
+volumes:
+  pgdata:
+    driver: local

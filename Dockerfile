@@ -10,7 +10,7 @@ COPY ./.env ./.env
 
 RUN npm install
 
-COPY . .
+COPY ./dist .
 
 EXPOSE ${SERVER_PORT}
 

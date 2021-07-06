@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // "incremental": true,                        
+    // "incremental": true,
     "target": "es5",
     "module": "commonjs",
     // "lib": [],
@@ -46,9 +46,6 @@
       ],
       "@shared/*": [
         "shared/*"
-      ],
-      "@utils/*": [
-        "utils/*"
       ],
       "@errors/*": [
         "shared/errors/*"

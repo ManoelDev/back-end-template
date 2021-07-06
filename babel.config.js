@@ -9,7 +9,6 @@ module.exports = {
         '@config': './src/config',
         '@modules': './src/modules',
         '@shared': './src/shared',
-        '@utils': './src/utils',
         '@errors': './src/shared/errors',
         '@database': './src/database',
         '@lib': './src/lib',

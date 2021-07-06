@@ -19,7 +19,7 @@
   "example": "feat: Nova função",
   "scopeDescriptions": [
     "Pode ser qualquer nova opção de recurso que especifica a localização da alteração de confirmação.",
-    "Por exemplo, $ location, $ browser, $ compile, $ rootScope, ngHref, ngClick, ngView.",
+    "Por exemplo, $location, $browser, $compile, $rootScope, ngHref, ngClick, ngView.",
     "No desenvolvimento de aplicativos, um escopo é uma página, módulo ou componente."
   ],
   "invalidScopeDescriptions": [

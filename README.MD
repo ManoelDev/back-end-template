@@ -16,6 +16,8 @@ Antes de começarmos, você vai precisar ter instalado em sua máquina as seguin
 - [Yarn](https://nodejs.org/en/)
 - [VSCode](https://code.visualstudio.com/)
 
+<!-- [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Api-example&uri=http%3A%2F%2Fgoogle.com.br%2F) -->
+
 ### 🎲 Rodando o Back End (servidor)
 
 ```bash
@@ -49,3 +51,4 @@ $ yarn dev:server
 - [ ] Cadastro de usuários
 - [ ] Middleware global de autenticação
 - [ ] Middleware global para ACL (controle de permissões)
+- [ ] Middleware global refresh token
